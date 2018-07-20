@@ -8,6 +8,7 @@ require 'hub_spot/configuration'
 require 'hub_spot/connection'
 require 'hub_spot/encryptor'
 require 'hub_spot/result'
+require 'hub_spot/endpoints/oauth'
 require 'hub_spot/oauth/client'
 require 'hub_spot/version'
 

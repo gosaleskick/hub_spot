@@ -4,6 +4,7 @@ module HubSpot
   module OAuth
     class Client
       include HubSpot::Connection
+      include HubSpot::Endpoints::OAuth
 
       def initialize(token:)
         @token = token
