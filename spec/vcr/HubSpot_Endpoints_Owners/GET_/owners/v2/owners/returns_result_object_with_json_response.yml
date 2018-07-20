@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/owners/v2/owners
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer access_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 20 Jul 2018 08:32:15 GMT
+      content-type:
+      - application/json;charset=utf-8
+      content-length:
+      - '236'
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=dedcd01e6b669843303294443a53551111532075535; expires=Sat, 20-Jul-19
+        08:32:15 GMT; path=/; domain=.hubapi.com; HttpOnly
+      access-control-allow-credentials:
+      - 'false'
+      vary:
+      - Accept-Encoding, User-Agent
+      x-trace:
+      - 2BB93D62AB35E4A980AAAA7843ED8404338F10AAFF000000000000000000
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 43d4137e5edeb859-WAW
+    body:
+      encoding: UTF-8
+      string: '[{"portalId":4738746,"ownerId":32921899,"type":"PERSON","firstName":"Adam","lastName":"Zapaśnik","email":"adam@saleskick.co","createdAt":1531736873605,"updatedAt":1531736873605,"remoteList":[{"id":28319039,"portalId":4738746,"ownerId":32921899,"remoteId":"6212350","remoteType":"HUBSPOT","active":true}],"hasContactsAccess":false}]'
+    http_version:
+  recorded_at: Fri, 20 Jul 2018 08:32:15 GMT
+recorded_with: VCR 4.0.0

@@ -7,6 +7,7 @@ module HubSpot
       include HubSpot::Endpoints::Deals
       include HubSpot::Endpoints::Engagements
       include HubSpot::Endpoints::OAuth
+      include HubSpot::Endpoints::Owners
 
       def initialize(token:)
         @token = token
