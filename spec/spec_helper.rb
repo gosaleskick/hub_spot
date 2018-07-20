@@ -16,4 +16,13 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  config.before(:all) do
+    HubSpot.configure do |config|
+      config.client_id = 'client_id'
+      config.client_secret = 'client_secret'
+      config.redirect_uri = 'test_redirect_uri'
+      config.secret_encryption_key = "\xB2\x9Dx\xF8\x12\x8B\xEF\xD9\xFA\x94\x8D\x1C\xCA \xEE\"xo,\xBEn\x93)\xB2\xFD\xDE\x87cA\xF9j\a"
+    end
+  end
 end
