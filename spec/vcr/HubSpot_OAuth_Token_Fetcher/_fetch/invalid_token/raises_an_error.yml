@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.hubapi.com/oauth/v1/token
+    body:
+      encoding: US-ASCII
+      string: client_id=client_id&client_secret=client_secret&code=invalid_code&grant_type=authorization_code&redirect_uri=test_redirect_uri
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Expect:
+      - ''
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 17 Jul 2018 15:09:30 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Content-Length:
+      - '169'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de6674eb1ed89d4c3d04fc2671dc5ba1e1531840170; expires=Wed, 17-Jul-19
+        15:09:30 GMT; path=/; domain=.hubapi.com; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'false'
+      X-Trace:
+      - 2BBDC73114B3ACBC9EF0E0CBF711B1F865B7DE41B5000000000000000000
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      CF-RAY:
+      - 43bda1469db92ac7-WAW
+    body:
+      encoding: UTF-8
+      string: '{"status":"BAD_AUTH_CODE","message":"missing or unknown auth code","correlationId":"ce3a98b8-ce5a-4751-b830-7f9d76549d5a","requestId":"fd9fdcf5e03b9eb80ef87e3397ac3975"}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://api.hubapi.com/oauth/v1/token
+  recorded_at: Tue, 17 Jul 2018 15:09:30 GMT
+recorded_with: VCR 4.0.0
