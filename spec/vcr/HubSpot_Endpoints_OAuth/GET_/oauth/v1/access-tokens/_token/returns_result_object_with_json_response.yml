@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/oauth/v1/access-tokens/access_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer access_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Fri, 20 Jul 2018 08:32:15 GMT
+      content-type:
+      - application/json;charset=utf-8
+      content-length:
+      - '276'
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=d3d951b7610f68691f8b8155f7ea590491532075534; expires=Sat, 20-Jul-19
+        08:32:14 GMT; path=/; domain=.hubapi.com; HttpOnly
+      access-control-allow-credentials:
+      - 'false'
+      vary:
+      - Accept-Encoding, User-Agent
+      x-trace:
+      - 2B7026395FD83A39BFDBEEB3F5E9A53F07C6F5038F000000000000000000
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 43d4137d39716b31-WAW
+    body:
+      encoding: UTF-8
+      string: '{"token":"access_token","user":"adam@saleskick.co","hub_domain":"adamsales-dev-4738746.com","scopes":["contacts","oauth"],"hub_id":4738746,"app_id":177721,"expires_in":19407,"user_id":6212350,"token_type":"access"}'
+    http_version:
+  recorded_at: Fri, 20 Jul 2018 08:32:15 GMT
+recorded_with: VCR 4.0.0
