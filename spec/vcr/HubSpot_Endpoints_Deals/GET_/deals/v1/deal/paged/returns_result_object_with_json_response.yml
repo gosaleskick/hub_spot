@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/deals/v1/deal/paged?limit=250&properties=hubspot_owner_id&properties=amount
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer access_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 18 Jul 2018 12:16:41 GMT
+      content-type:
+      - application/json;charset=utf-8
+      content-length:
+      - '324'
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=d966b2d5398470109171c011dc0d41f1d1531916201; expires=Thu, 18-Jul-19
+        12:16:41 GMT; path=/; domain=.hubapi.com; HttpOnly
+      access-control-allow-credentials:
+      - 'false'
+      vary:
+      - Accept-Encoding, User-Agent
+      x-trace:
+      - 2B13BF685502F846A4F97A9D6D566AD934052C42C0000000000000000000
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 43c4e1831cbab829-WAW
+    body:
+      encoding: UTF-8
+      string: '{"deals":[{"portalId":4738746,"dealId":322296361,"isDeleted":false,"associations":null,"properties":{"amount":{"value":"40","timestamp":1531737409030,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"amount","value":"40","timestamp":1531737409030,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"hubspot_owner_id":{"value":"32921899","timestamp":1531737409030,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"hubspot_owner_id","value":"32921899","timestamp":1531737409030,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]}},"imports":[],"stateChanges":[]},{"portalId":4738746,"dealId":322298530,"isDeleted":false,"associations":null,"properties":{"amount":{"value":"45","timestamp":1531744369560,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"amount","value":"45","timestamp":1531744369560,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"hubspot_owner_id":{"value":"32921899","timestamp":1531743503592,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"hubspot_owner_id","value":"32921899","timestamp":1531743503592,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]}},"imports":[],"stateChanges":[]}],"hasMore":false,"offset":322298530}'
+    http_version: 
+  recorded_at: Wed, 18 Jul 2018 12:16:41 GMT
+recorded_with: VCR 4.0.0

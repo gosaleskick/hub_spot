@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/deals/v1/deal/recent/modified?count=100&since=1531744369000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer access_token
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Wed, 18 Jul 2018 12:37:00 GMT
+      content-type:
+      - application/json;charset=utf-8
+      content-length:
+      - '735'
+      connection:
+      - close
+      set-cookie:
+      - __cfduid=da68fdde4ee22723e9c419211efe3df371531917420; expires=Thu, 18-Jul-19
+        12:37:00 GMT; path=/; domain=.hubapi.com; HttpOnly
+      access-control-allow-credentials:
+      - 'false'
+      vary:
+      - Accept-Encoding, User-Agent
+      x-trace:
+      - 2B338686931A79B540604B397DD13161C642E289DF000000000000000000
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      server:
+      - cloudflare
+      cf-ray:
+      - 43c4ff46cae02abb-WAW
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"portalId":4738746,"dealId":322298530,"isDeleted":false,"associations":{"associatedVids":[],"associatedCompanyIds":[],"associatedDealIds":[]},"properties":{"dealname":{"value":"newdeal","timestamp":1531743503592,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"dealname","value":"newdeal","timestamp":1531743503592,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"amount":{"value":"45","timestamp":1531744369560,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"amount","value":"45","timestamp":1531744369560,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"closedate":{"value":"1533039500099","timestamp":1531743503592,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"closedate","value":"1533039500099","timestamp":1531743503592,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"num_associated_contacts":{"value":"0","timestamp":0,"source":"CALCULATED","sourceId":null,"versions":[{"name":"num_associated_contacts","value":"0","source":"CALCULATED","sourceVid":[]}]},"hs_all_team_ids":{"value":"","timestamp":1531743503856,"source":"CALCULATED","sourceId":"PermissionsUpdater","versions":[{"name":"hs_all_team_ids","value":"","timestamp":1531743503856,"sourceId":"PermissionsUpdater","source":"CALCULATED","sourceVid":[]}]},"createdate":{"value":"1531743500100","timestamp":1531743503592,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"createdate","value":"1531743500100","timestamp":1531743503592,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"pipeline":{"value":"default","timestamp":1531743503592,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"pipeline","value":"default","timestamp":1531743503592,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"hubspot_team_id":{"value":"","timestamp":1531743503856,"source":"CRM_UI","sourceId":"PermissionsUpdater","versions":[{"name":"hubspot_team_id","value":"","timestamp":1531743503856,"sourceId":"PermissionsUpdater","source":"CRM_UI","sourceVid":[]}]},"hubspot_owner_id":{"value":"32921899","timestamp":1531743503592,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"hubspot_owner_id","value":"32921899","timestamp":1531743503592,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"hs_lastmodifieddate":{"value":"1531744383748","timestamp":1531744383748,"source":"CALCULATED","sourceId":null,"versions":[{"name":"hs_lastmodifieddate","value":"1531744383748","timestamp":1531744383748,"source":"CALCULATED","sourceVid":[]}]},"hs_analytics_source":{"value":"","timestamp":1531743503952,"source":"DEALS","sourceId":"deal
+        sync with no associated contacts","versions":[{"name":"hs_analytics_source","value":"","timestamp":1531743503952,"sourceId":"deal
+        sync with no associated contacts","source":"DEALS","sourceVid":[]}]},"hubspot_owner_assigneddate":{"value":"1531743503592","timestamp":1531743503592,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"hubspot_owner_assigneddate","value":"1531743503592","timestamp":1531743503592,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"dealstage":{"value":"closedwon","timestamp":1531744383748,"source":"CRM_UI","sourceId":"adam@saleskick.co","versions":[{"name":"dealstage","value":"closedwon","timestamp":1531744383748,"sourceId":"adam@saleskick.co","source":"CRM_UI","sourceVid":[]}]},"hs_createdate":{"value":"1531743503592","timestamp":1531743503592,"source":"CONTACTS","sourceId":"CRM_UI","versions":[{"name":"hs_createdate","value":"1531743503592","timestamp":1531743503592,"sourceId":"CRM_UI","source":"CONTACTS","sourceVid":[]}]},"hs_analytics_source_data_2":{"value":"","timestamp":1531743503952,"source":"DEALS","sourceId":"deal
+        sync with no associated contacts","versions":[{"name":"hs_analytics_source_data_2","value":"","timestamp":1531743503952,"sourceId":"deal
+        sync with no associated contacts","source":"DEALS","sourceVid":[]}]},"hs_analytics_source_data_1":{"value":"","timestamp":1531743503952,"source":"DEALS","sourceId":"deal
+        sync with no associated contacts","versions":[{"name":"hs_analytics_source_data_1","value":"","timestamp":1531743503952,"sourceId":"deal
+        sync with no associated contacts","source":"DEALS","sourceVid":[]}]},"hs_all_owner_ids":{"value":"32921899","timestamp":1531743503856,"source":"CALCULATED","sourceId":"PermissionsUpdater","versions":[{"name":"hs_all_owner_ids","value":"32921899","timestamp":1531743503856,"sourceId":"PermissionsUpdater","source":"CALCULATED","sourceVid":[]}]}},"imports":[],"stateChanges":[]}],"hasMore":false,"offset":1,"total":1}'
+    http_version: 
+  recorded_at: Wed, 18 Jul 2018 12:37:00 GMT
+recorded_with: VCR 4.0.0
