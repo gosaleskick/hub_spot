@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.hubapi.com/deals/v1/deal/paged?limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer access_token
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Jul 2018 09:36:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3bf703c9f854cd172ed9c006ae0bcc921531906562; expires=Thu, 18-Jul-19
+        09:36:02 GMT; path=/; domain=.hubapi.com; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Trace:
+      - 2B2B8D99BFACBE398CDDCF54909044CB2C1B57BE99000000000000000000
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      CF-RAY:
+      - 43c3f62fc8422abb-WAW
+    body:
+      encoding: UTF-8
+      string: '{"deals":[{"portalId":4738746,"dealId":322296361,"isDeleted":false,"associations":null,"properties":{},"imports":[],"stateChanges":[]}],"hasMore":true,"offset":322296361}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://api.hubapi.com/deals/v1/deal/paged?limit=1
+  recorded_at: Wed, 18 Jul 2018 09:36:02 GMT
+- request:
+    method: get
+    uri: https://api.hubapi.com/deals/v1/deal/paged?limit=1&offset=322296361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Accept:
+      - application/json
+      Authorization:
+      - Bearer access_token
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 Jul 2018 09:36:02 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3bf703c9f854cd172ed9c006ae0bcc921531906562; expires=Thu, 18-Jul-19
+        09:36:02 GMT; path=/; domain=.hubapi.com; HttpOnly
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Vary:
+      - Accept-Encoding, User-Agent
+      X-Trace:
+      - 2B55A0938463251F1CA36874855A8F36B1DA7A3B36000000000000000000
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      CF-RAY:
+      - 43c3f63179ec2abb-WAW
+    body:
+      encoding: UTF-8
+      string: '{"deals":[{"portalId":4738746,"dealId":322298530,"isDeleted":false,"associations":null,"properties":{},"imports":[],"stateChanges":[]}],"hasMore":false,"offset":322298530}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://api.hubapi.com/deals/v1/deal/paged?limit=1&offset=322296361
+  recorded_at: Wed, 18 Jul 2018 09:36:02 GMT
+recorded_with: VCR 4.0.0
