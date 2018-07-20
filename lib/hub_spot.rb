@@ -5,6 +5,7 @@ require 'oj'
 require 'rbnacl/libsodium'
 
 require 'hub_spot/configuration'
+require 'hub_spot/encryptor'
 require 'hub_spot/version'
 
 module HubSpot
